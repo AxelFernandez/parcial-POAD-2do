@@ -146,7 +146,7 @@ def main() -> None:
                 ["Campo", "Detalle"],
                 ["Estudiantes", "Axel Fernandez"],
                 ["Fecha de presentacion", "18/06/2026"],
-                ["Repositorio", "Publicar en GitHub y reemplazar este texto por la URL real"],
+                ["Repositorio", "https://github.com/AxelFernandez/parcial-practica2"],
             ],
             [5 * cm, 10 * cm],
         )
