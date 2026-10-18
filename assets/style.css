@@ -140,6 +140,71 @@ label {
   margin-top: 16px;
 }
 
+.analysis-section {
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+
+.analysis-heading h2 {
+  margin: 4px 0 10px;
+  font-size: clamp(24px, 3vw, 38px);
+}
+
+.analysis-heading > p:last-child,
+.analysis-note {
+  max-width: 920px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.analysis-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.analysis-card {
+  min-height: 112px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--accent-2);
+  border-radius: 8px;
+}
+
+.analysis-card span,
+.analysis-card small {
+  display: block;
+  color: var(--muted);
+}
+
+.analysis-card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+}
+
+.analysis-grid > div {
+  min-width: 0;
+  padding: 8px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.analysis-note {
+  margin: 14px 0 0;
+  font-size: 13px;
+}
+
 .static-card {
   padding: 18px;
 }
@@ -160,6 +225,8 @@ label {
   .topbar,
   .filters,
   .kpi-row,
+  .analysis-kpi-row,
+  .analysis-grid,
   .grid,
   .static-gallery {
     grid-template-columns: 1fr;
