@@ -4,6 +4,12 @@ Trabajo práctico para Programación Orientada al Análisis de Datos. El dashboa
 original se amplía con análisis descriptivo y una red neuronal sencilla para
 comparar predicciones de distancia con una regla base.
 
+## Integrantes
+
+Marcos Rios, Axel Nuñez y Axel Fernandez.
+
+Código del proyecto: [repositorio público, rama master](https://github.com/AxelFernandez/parcial-POAD-2do/tree/master).
+
 ## Dataset real
 
 Se usa un GeoJSON publicado por IDE Transporte:

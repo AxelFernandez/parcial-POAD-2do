@@ -27,7 +27,7 @@ DATA_URL = (
     "&maxFeatures=28000&outputFormat=application%2Fjson"
 )
 DATA_URL_HTML = DATA_URL.replace("&", "&amp;")
-REPOSITORY_URL = "https://github.com/AxelFernandez/parcial-POAD-2do/tree/codex/poad-parcial2-analisis"
+REPOSITORY_URL = "https://github.com/AxelFernandez/parcial-POAD-2do/tree/master"
 INK = colors.HexColor("#18201f")
 MUTED = colors.HexColor("#66716f")
 PAPER = colors.HexColor("#f6f2e9")
@@ -256,7 +256,7 @@ def main() -> None:
         topMargin=1.6 * cm,
         bottomMargin=1.8 * cm,
         title="Postes kilométricos - Examen Parcial 2",
-        author="Axel Fernández",
+        author="Marcos Rios, Axel Nuñez y Axel Fernandez",
         subject="Dashboard con análisis estadístico y red neuronal",
     )
     story = []
@@ -280,19 +280,13 @@ def main() -> None:
                 ["Carrera", "Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial"],
                 ["Curso y sede", "2do 4 | Godoy Cruz"],
                 ["Docente", "Juan Caballero Gallar | Ciclo Lectivo 2026"],
-                ["Estudiante", "Axel Fernández"],
+                ["Integrantes", "Marcos Rios, Axel Nuñez y Axel Fernandez"],
+                ["Repositorio", f"<link href='{REPOSITORY_URL}' color='#106b5f'>GitHub · rama master</link>"],
                 ["Fecha de entrega", "30/10/2026 - Aula Virtual"],
-                ["Fecha de preparación", "17/10/2026"],
+                ["Fecha de preparación", "27/10/2026"],
             ],
             [4.3 * cm, 13.5 * cm],
             styles,
-        )
-    )
-    story.append(Spacer(1, 0.6 * cm))
-    story.append(
-        Paragraph(
-            "Rama de esta entrega: <font name='Courier'>codex/poad-parcial2-analisis</font> del repositorio público.",
-            styles["SmallText"],
         )
     )
     story.append(PageBreak())
@@ -467,7 +461,7 @@ def main() -> None:
     story.append(Spacer(1, 0.25 * cm))
     story.append(
         Paragraph(
-            f"Código de esta entrega: <link href='{REPOSITORY_URL}' color='#106b5f'>rama codex/poad-parcial2-analisis</link> del repositorio público. El enlace abre esta versión del código.",
+            f"Código fuente: <link href='{REPOSITORY_URL}' color='#106b5f'>AxelFernandez/parcial-POAD-2do · rama master</link>.",
             styles["SmallText"],
         )
     )
